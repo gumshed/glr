@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!--
+* Greenpoint Land Reserves
+* Build Date: September 2020
+* Last Update: September 2020
+* Author: gumshed
+* Copyright (C) Greenpoint Land Reserves - Movement DAO
+* -->
+<html lang="zxx" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Greenpoint Land Reserves</title>
+		<meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Madeon08">
+
+        <!-- ================= Favicons ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Standard iPhone Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="57x57" href="img/Icon-App-57x57@2x.png">
+
+		<!-- ============== Resources style ============== -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+
+	<body>
+
+		<!-- *** LOADING *** -->
+
+		<div id="loading">
+
+			<div class="loader">
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<p class="loader__label">Greenpoint Land Reserves | <span data-words="Loading|Chargement|Lädt|Cargando|加载中"></span></p>
+			</div>
+		</div>
+
+		<!-- *** / LOADING *** -->
+
+		<!-- *** Menu icon for opening/closing the menu on small screen *** -->
+
+		<button id="small-screen-menu">
+
+			<span class="custom-menu"></span>
+
+		</button>
+
+		<!-- *** / Menu icon *** -->
+
+		<!-- *** Constellation *** -->
+		<canvas id="constellationel"></canvas> <!-- Canvas displaying the animation -->
+
+		<div id="constellation"></div> <!-- Used to display your background picture, set up the path to your picture in your css/style.css file OR replace the img/constellation.jpg file by yours -->
+
+		<!-- The overlay that you can see over the animation is generated with the following CSS rule : .custom-overlay, it can be found in your style.css file under 2. GENERIC STYLES part -->
+		<div class="custom-overlay"></div>
+
+		<!-- Logo on top right -->
+		<a class="brand-logo" href="#Home">
+			<img src="img/logo.png" alt="Our company logo" class="img-fluid" />
+		</a>
+
+		<!-- *** Fullpage sections *** -->
+		<div id="fullpage">
+
+			<!-- +++ START - Home +++ -->
+			<div class="section" id="section0">
+
+				<section class="content-inside-section">
+
+					<div class="container">
+
+						<div class="container-inside">
+
+							<div class="main-content align-center">
+
+								<!-- *** TEXT TITLE *** -->
+								<h1>
+									Greenpoint<br>
+									Land Reserves
+								</h1>
+
+								<!-- *** COUNTDOWN TITLE *** -->
+								<!-- Set your date at the bottom of js/jquery.countdown.js -->
+
+								<!-- <h1>
+									official launch in<br>
+									<span id="getting-started"></span>
+								</h1> -->
+
+								<p class="on-home">Greenpoint Land Reserves is a Sphere of The Movement DAO. As a Nonprofit organization, we are is dedicated to acquiring, managing, and protecting land for future generations. 
+								</p>
+
+								<br>
+
+								<div class="command">
+
+									<!-- ********** IF YOU WANT TO USE MORE POPUPS, SEE THE RECOMMENDATIONS AT THE END OF js/dialogFx.js ********** -->
+									<!--<a id="popup_somedialog_1" data-dialog="somedialog_1" class="trigger light-btn colored">
+
+										<span id="first-text">Keep me updated!</span>
+
+										<span id="second-text">Get notified</span> <!-- On this span, it's important to use a text smaller or equal than the first one (here: Weekly Newsletter) to avoid any troubles -->
+									</a>
+
+									<a id="button-more" class="light-btn" href="#About">Explore
+										<span class="ask-to-scroll">
+											<span class="arrow"><span></span><span></span></span>
+											<span class="arrow"><span></span><span></span></span>
+											<span class="arrow"><span></span><span></span></span>
+										</span>
+									</a>
+
+									<div class="clear"></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+			<!-- +++ END - Home +++ -->
+
+			<!-- +++ START - About +++ -->
+			<div class="section" id="section1">
+
+				<section class="content-inside-section">
+
+					<div class="container">
+
+						<div class="container-inside">
+
+							<div class="main-content">
+
+								<span class="section-name">About us</span>
+
+								<h2>501(c)(3) Nonprofit Sphere<br>of The Movement DAO</h2>
+
+								<span class="separator"></span>
+
+								<div class="row">
+
+									<div class="col-12 col-lg-6">
+
+										<p>Founded in 2017, <a href="https://movementdao.io/" target="_blank" class="link_in_text">The Movement DAO</a> has been a grassroots, globaly collaborative project focused on the creation of value for the benefit of humanity. 
+										<br>
+										</br>
+										As a Nonprofit, the Greenpoint Land Reserves is focused on creating a land reserve system to protect the natural wonder we have left. 
+										</p>
+
+									</div>
+
+									<div class="col-12 col-lg-6">
+
+										<p> Movement DAO members can participate in Board meetings and control the direction democratically by voting. </p>
+
+										<ul class="about-list">
+											<li>Natural Land Access</li>
+											<li>Community Enrichment</li>
+											<li>DAO Investment</li>
+											
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+			<!-- +++ END - About +++ -->
+
+			<!-- +++ START - Work +++ -->
+			<!--<div class="section" id="section2">
+
+				<section class="content-inside-section">
+
+					<div class="container">
+
+						<div class="container-inside">
+
+							<div class="main-content">
+
+								<span class="section-name">One great product</span>
+
+								<h2>What you need now</h2>
+
+								<span class="separator"></span>
+
+								<div class="row">
+
+									<div class="col-12 col-lg-4 block-item">
+
+										<a href="img/item-1.jpg" data-featherlight="image" data-title="Great spirit everywhere" data-text="1. Nostrud dolor aute sed proident et ea et duis proident quis ex magna enim aliquip esse aute non elit in eu in aliquip."><img src="img/item-1.jpg" alt="Item 1" class="img-fluid item-gallery" />
+
+										<h3>Single picture lightbox <small>One snap</small></h3></a>
+
+										<p>Lorem ipsum Do dolor commodo occaecat sit pariatur nisi sit laboris officia exercitation officia laboris ex ullamco nulla do in elit.</p>
+
+									</div>
+
+									<div class="col-12 col-lg-4 block-item" data-featherlight-gallery data-featherlight-filter="a">
+
+										<a href="img/gallery-1.jpg" data-title="Takin' It Back" data-text="1. Nostrud dolor aute sed proident et ea et duis proident quis ex magna enim aliquip esse aute non elit in eu in aliquip.">
+											<img src="img/gallery-1.jpg" alt="Gallery 1" class="img-fluid item-gallery" />
+
+										<h3>Gallery of pictures <small>More & More</small></h3></a>
+
+										<p>Lorem ipsum Do dolor commodo occaecat sit pariatur nisi sit laboris officia exercitation officia laboris ex ullamco nulla do in elit.</p>
+										
+
+										<a class="display-none" href="img/gallery-2.jpg" data-title="The path of the designer" data-text="2. Nostrud dolor aute sed proident et ea et duis proident quis ex magna enim aliquip esse aute non elit in eu in aliquip.">
+											<img src="img/gallery-2.jpg" alt="Gallery 2" class="img-fluid item-gallery" />
+										</a>
+
+										<a class="display-none" href="img/gallery-3.jpg" data-title="Promised land" data-text="3. Nostrud dolor aute sed proident et ea et duis proident quis ex magna enim aliquip esse aute non elit in eu in aliquip.">
+											<img src="img/gallery-3.jpg" alt="Gallery 3" class="img-fluid item-gallery" />
+										</a>
+
+									</div>
+
+									<div class="col-12 col-lg-4 block-item block-item-video">
+
+										<a href="https://www.youtube.com/embed/Bey4XXJAqS8" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true" data-featherlight-iframe-width="1200" data-featherlight-iframe-height="675" data-title="Your YouTube Video" data-text="3. Nostrud dolor aute sed proident et ea et duis proident quis ex magna enim aliquip esse aute non elit in eu in aliquip.">
+											<img src="img/item-3.jpg" alt="Item 3" class="img-fluid item-gallery" />
+										
+
+										<h3>Video iframe <small>Animate it</small></h3></a>
+
+										<p>Lorem ipsum Do dolor commodo occaecat sit pariatur nisi sit laboris officia exercitation officia laboris ex ullamco nulla do in elit.</p>
+
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</section>
+
+			</div>-->
+			<!-- +++ END - Work +++ -->
+
+			<!-- +++ START - Contact +++ -->
+			<div class="section" id="section3">
+
+				<section class="content-inside-section">
+
+					<div class="container">
+
+						<div class="container-inside">
+
+							<div class="main-content">
+
+								<span class="section-name">Contact Us</span>
+								
+								<h2>Get in touch</h2>
+
+								<span class="separator"></span>
+
+		                		<div class="row">
+
+		                			<div class="col-12 col-lg-6">
+
+										<div class="row">
+
+											<div class="col-12 col-sm-6">
+												<h4>North Dakota</h4>
+												<p class="contact-address">Fargo, 58103<br>Williston, 58801<br><a href="mailto:info@greenpointlandreserves.io" class="link_in_text">info@greenpointlandreserves.io</a>
+												 </a></p>
+
+											</div>
+
+											<div class="col-12 col-sm-6">
+												<h4>Colorado</h4>
+												<p class="contact-address">Fort Collins, 80523<br><a href="mailto:info@greenpointlandreserves.io" class="link_in_text">info@greenpointlandreserves.io</a></p>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12 col-sm-6">
+												<h4>Wyoming</h4>
+												<p class="contact-address">Freedom, 83120<br></p>
+											</div>
+
+											<div class="col-12 col-sm-6">
+												<h4>Montana</h4>
+												<p class="contact-address">Culbertson, 59218<br> </p>
+											</div>
+										</div>
+
+		                			</div>
+
+				                    <div class="col-12 col-lg-5 offset-lg-1">
+
+				                        <!-- START - Contact Form -->
+				                        <!-- <form id="contact-form" name="contact-form" method="POST" data-name="Contact Form" autocomplete="on">
+
+				                            <div class="row">
+
+				                            	<!-- ! Anti-spam field ! Invisible for users, the major part of bots will write something in this field, then, they will be blocked and no spam in your inbox will come.  -->
+				                               <!-- <div class="col display-none">
+				                                    <div class="form-group">
+				                                        <input type="text" id="checking" class="form form-control" placeholder="Leave this field empty" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Leave this field empty'" name="checking" data-name="Checking">
+				                                    </div>
+				                                </div>
+
+				                                <!-- Full name -->
+				                                <!-- <div class="col-12 col-sm-6 col-lg-12">
+				                                    <div class="form-group">
+				                                        <input type="text" id="name" class="form form-control" placeholder="Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name*'" name="name" data-name="Name" autocomplete="name" required>
+				                                    </div>
+				                                </div>
+
+				                                <!-- E-mail -->
+				                                <!-- <div class="col-12 col-sm-6 col-lg-12">
+				                                    <div class="form-group">
+				                                        <input type="email" id="email" class="form form-control" placeholder="Email Address*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address*'" name="email-address" data-name="Email Address" autocomplete="email" required>
+				                                    </div>
+				                                </div>
+
+				                                <!-- Message -->
+				                                <!-- <div class="col-12">
+				                                    <div class="form-group">
+				                                        <textarea id="text-area" class="form textarea form-control" placeholder="Your message here*... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here*... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
+				                                    </div>
+				                                    <span class="sub-text">* Required fields</span>
+				                                </div>
+
+				                            </div>
+
+				                            <!-- Form submission -->
+				                            <!-- <button type="submit" id="valid-form" class="btn btn-lg submit"><span>Send my Message</span></button>
+
+				                        </form>
+				                        <!-- END - Contact Form -->
+
+				                    </div>
+		               			</div>
+							</div>	
+						</div>
+					</div>
+				</section>
+
+			</div>
+			<!-- +++ END - Contact +++ -->
+
+		</div>
+		<!-- +++ / Fullpage sections +++ -->
+
+		<!-- START - Newsletter Popup -->
+		<div id="somedialog_1" class="dialog">
+
+			<div class="dialog__overlay"></div>
+					
+			<div class="dialog__content">
+						
+				<div class="dialog-inner">
+							
+					<h3>You like taking the lead of line?</h3>
+							
+					<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+
+					<!-- Newsletter Form -->
+					<div id="subscribe">
+
+		                <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+		                    <div class="form-group">
+
+		                        <div class="controls">
+		                            
+		                        	<!-- Field  -->
+		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to type your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to type your email'" class="form-control email srequiredField" />
+
+		                            <!-- Button -->
+		                            <button class="btn btn-lg submit on-center"><span>Get notified</span></button>
+
+		                            <div class="clear"></div>
+
+		                        </div>
+		                    </div>
+		                </form>
+        			</div>
+        			<!-- /. Newsletter Form -->
+
+				</div>
+
+				<!-- Cross closing the Newsletter Popup -->
+				<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
+
+			</div>		
+		</div>
+		<!-- END - Newsletter Popup -->
+
+		<!-- CONTACT FORM - Answer for the contact form is displayed in the next div, do not remove it. -->       
+        <div id="block-answer" class="">
+
+            <div id="answer"></div>
+
+        </div>
+
+		<!-- NEWSLETTER FORM - Answer for the newsletter form is displayed in the next div, do not remove it. -->
+		<div class="block-message">
+
+			<div class="message">
+
+				<p class="notify-valid"></p>
+			</div>
+		</div>
+
+		<footer>
+
+			<div class="line"></div>
+
+			<div class="row">
+
+				<div class="col-12 col-xl-4 footer-nav">
+
+					<ul id="bottomMenu" class="on-left">
+
+						<li data-menuanchor="Home" class="active">
+							<a href="#Home">Home</a>
+						</li>
+
+						<li data-menuanchor="About">
+							<a href="#About">About</a>
+						</li>
+
+					   <!--<li data-menuanchor="Works">
+							<a href="#Works">Works</a>
+						</li>-->
+
+						<li data-menuanchor="Contact">
+							<a href="#Contact">Contact</a>
+						</li>
+
+						<!--<li>
+							<a class="trigger open_somedialog_1">Notify Me</a>
+						</li>-->
+					</ul>
+				</div>
+
+				<div class="col-12 col-xl-4 footer-copyright">
+					<p>© Greenpoint Land Reverses - Preservation</p>
+				</div>
+
+				<div class="col-12 col-xl-4 footer-nav">
+
+					<ul class="on-right">
+
+						<li>
+							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						</li>
+
+						<li>
+							<a href="https://twitter.com/GreenpointLand" target="_blank"><i class="fab fa-twitter"></i></a>
+						</li>
+
+						<li>
+							<a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+
+						<li>
+							<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+        <!-- ********** jQuery Resources ********** -->
+        <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+        <!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.easings.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+		<!-- Countdown plugin -->
+		<script src="js/jquery.countdown.js"></script>
+
+		<!-- FullPage plugin -->
+		<script src="js/jquery.fullPage.js"></script>
+
+		<!-- Constellation plugin -->
+		<script src="js/constellation.js"></script>
+
+		<!-- Contact form plugin -->
+		<script src="js/contact-me.js"></script>
+
+		<!-- Popup Newsletter Form -->
+		<script src="js/classie.js"></script>
+		<script src="js/dialogFx.js"></script>
+
+		<!-- Newsletter plugin -->
+		<script src="js/notifyMe.js"></script>
+
+		<!-- Gallery plugin -->
+		<script src="js/jquery.detect_swipe.min.js"></script>
+		<script src="js/featherlight.js"></script> 
+		<script src="js/featherlight.gallery.js"></script>
+
+		<!-- Main JS File -->
+		<script src="js/main.js"></script>
+
+	</body>
+
+</html>
