@@ -1,2 +1,2 @@
-# greenpointlandtrust.io
-Greenpoint Land Trust Information Site
+# greenpointlandreserves.io
+Greenpoint Land Reserves Information Site
