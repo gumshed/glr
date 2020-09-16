@@ -2517,7 +2517,7 @@ canvas#distorspirit {
   #fullpage .section {
     height: auto !important;
     padding: 0;
-    opacity: 1 !important;
+    opacity: .75 !important;
   }
   #fullpage .section:not(#section0) {
     background: #0b071d;
