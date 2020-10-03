@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--
+* Greenpoint Land Reserves
+* Build Date: September 2020
+* Last Update: October 2020
+* Author: gumshed
+* Copyright (C) Greenpoint Land Reserves - Movement DAO
+* -->
+<html lang="zxx" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Greenpoint Land Reserves</title>
+		<meta name="description" content="Nonprofit Arm of The Movement DAO">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="gumshed">
+
+        <!-- ================= Favicons ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Standard iPhone Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="57x57" href="img/Icon-App-57x57@2x.png">
+
+		<!-- ============== Resources style ============== -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+
+	<body>
+
+		<!-- *** LOADING *** -->
+
+		<div id="loading">
+
+			<div class="loader">
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<span class="dots">	.</span>
+				<p class="loader__label">Greenpoint Land Reserves | <span data-words="Loading|Chargement|Lädt|Cargando|加载中"></span></p>
+			</div>
+		</div>
+
+		<!-- *** / LOADING *** -->
+
+		<!-- *** Menu icon for opening/closing the menu on small screen *** -->
+
+		<button id="small-screen-menu">
+
+			<span class="custom-menu"></span>
+
+		</button>
+
+		<!-- *** / Menu icon *** -->
+
+		<!-- *** Constellation *** -->
+		<canvas id="constellationel"></canvas> <!-- Canvas displaying the animation -->
+
+		<div id="constellation"></div> <!-- Used to display your background picture, set up the path to your picture in your css/style.css file OR replace the img/constellation.jpg file by yours -->
+
+		<!-- The overlay that you can see over the animation is generated with the following CSS rule : .custom-overlay, it can be found in your style.css file under 2. GENERIC STYLES part -->
+		<div class="custom-overlay"></div>
+
+		<!-- Logo on top right -->
+		<a class="brand-logo" href="#Home">
+			<img src="img/logo.png" alt="Our company logo" class="img-fluid" />
+		</a>
+
+		<!-- *** Fullpage Sections *** -->
+		<div id="fullpage">
+
+			<!-- +++ START - Home +++ -->
+			<div class="section" id="section0">
+
+				<section class="content-inside-section">
+
+					<div class="container">
+
+						<div class="container-inside">
+
+							<div class="main-content align-center">
+
+								<!-- *** TEXT TITLE *** -->
+								<h1>
+                                    Our Team
+								</h1>
+
+
+								<p class="on-home"><b>Greenpoint Land Reserves</b> is a Sphere of the <b>Movement DAO</b>. As a Nonprofit organization, we are dedicated to acquiring, managing, and protecting land for <b>Public Good</b>. 
+								</p>
+
+								<br>
+
+								<div class="command">
+
+									<!-- ********** IF YOU WANT TO USE MORE POPUPS, SEE THE RECOMMENDATIONS AT THE END OF js/dialogFx.js ********** -->
+									<!--<a id="popup_somedialog_1" data-dialog="somedialog_1" class="trigger light-btn colored">
+
+										<span id="first-text">Keep me updated!</span>
+
+										<span id="second-text">Get notified</span>  On this span, it's important to use a text smaller or equal than the first one (here: Weekly Newsletter) to avoid any troubles 
+									</a>-->
+
+									<a id="button-more" class="light-btn" href="#About-Us">Explore
+										<span class="ask-to-scroll">
+											<span class="arrow"><span></span><span></span></span>
+											<span class="arrow"><span></span><span></span></span>
+											<span class="arrow"><span></span><span></span></span>
+										</span>
+									</a>
+
+									<div class="clear"></div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+			<!-- +++ END - Home +++ -->
+
+			<!-- +++ START - About-Us +++ -->
+			<div class="section" id="section1">
+
+				<section class="content-inside-section">
+
+					<div class="container">
+
+						<div class="container-inside">
+
+							<div class="main-content">
+
+								<span class="#About-Us">About Us</span>
+
+								<h2>501(c)(3) Nonprofit Sphere<br>of The Movement DAO</h2>
+
+								<span class="separator"></span>
+
+								<div class="row">
+
+									<div class="col-12 col-lg-6">
+
+										<p>Founded in 2017, <a href="https://movementdao.io/" target="_blank" class="link_in_text">The Movement DAO</a> has been a grassroots and globally collaborative project focused on creating value for humanity's benefit. 
+										<br>
+										</br>
+										As a Nonprofit, Greenpoint Land Reserves is creating a land reserve system that protects and reclaims the natural wonder while supporting the people living in surrounding communities. We consider access to Public Lands a Public Good.  
+										</p>
+
+									</div>
+
+									<div class="col-12 col-lg-6">
+
+										<p> Movement DAO members can participate in Board meetings and control the direction democratically by voting. </p>
+
+										<ul class="about-list">
+											<li>Natural Land Access</li>
+											<li>Community Enrichment</li>
+											<li>DAO Investment</li>
+											<li>Open to All</li>
+											
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+			<!-- +++ END - About Us +++ -->
+
+
+		</div>
+		<!-- +++ / Fullpage sections +++ -->
+
+
+		<footer>
+
+			<div class="line"></div>
+
+			<div class="row">
+
+				<div class="col-12 col-xl-4 footer-nav">
+
+					<ul id="bottomMenu" class="on-left">
+
+						<li data-menuanchor="Home" class="active">
+							<a href="#Home">Home</a>
+						</li>
+
+						<li data-menuanchor="About-Us">
+							<a href="#About-Us">About Us</a>
+						</li>
+
+						<li data-menuanchor="How-It-Works">
+							<a href="#How-It-Works">How It Works</a>
+						</li>
+
+						<li data-menuanchor="Contact-Us">
+							<a href="#Contact-Us">Contact Us</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="col-12 col-xl-4 footer-copyright">
+					<p>© Greenpoint Land Reserves - Preservation</p>
+				</div>
+
+				<div class="col-12 col-xl-4 footer-nav">
+
+					<ul class="on-right">
+
+						<li>
+							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						</li>
+
+						<li>
+							<a href="https://twitter.com/GreenpointLand" target="_blank"><i class="fab fa-twitter"></i></a>
+						</li>
+
+						<li>
+							<a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+
+						<li>
+							<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+        <!-- ********** jQuery Resources ********** -->
+        <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+        <!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.easings.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+		<!-- Countdown plugin -->
+		<script src="js/jquery.countdown.js"></script>
+
+		<!-- FullPage plugin -->
+		<script src="js/jquery.fullPage.js"></script>
+
+		<!-- Constellation plugin -->
+		<script src="js/constellation.js"></script>
+
+		<!-- Contact form plugin -->
+		<script src="js/contact-me.js"></script>
+
+		<!-- Popup Newsletter Form -->
+		<script src="js/classie.js"></script>
+		<script src="js/dialogFx.js"></script>
+
+		<!-- Newsletter plugin -->
+		<script src="js/notifyMe.js"></script>
+
+		<!-- Gallery plugin -->
+		<script src="js/jquery.detect_swipe.min.js"></script>
+		<script src="js/featherlight.js"></script> 
+		<script src="js/featherlight.gallery.js"></script>
+
+		<!-- Main JS File -->
+		<script src="js/main.js"></script>
+
+	</body>
+
+</html>
