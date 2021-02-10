@@ -11,7 +11,7 @@ if (!window.requestAnimationFrame) {
  * Mantis.js / jQuery / Zepto.js plugin for Constellation
  * @version 1.2.2
  * @author Acauã Montiel <contato@acauamontiel.com.br>
- * @license http://acaua.mit-license.org/
+ * @license https://acaua.mit-license.org/
  */
 (function ($, window) {
 	/**

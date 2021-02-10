@@ -1,8 +1,8 @@
 /**
  * Featherlight - ultra slim jQuery lightbox
- * Version 1.7.12 - http://noelboss.github.io/featherlight/
+ * Version 1.7.12 - https://noelboss.github.io/featherlight/
  *
- * Copyright 2017, Noël Raoul Bossart (http://www.noelboss.com)
+ * Copyright 2017, Noël Raoul Bossart (https://www.noelboss.com)
  * MIT Licensed.
 **/
 (function($) {
@@ -588,7 +588,7 @@
 				this._previouslyActive = document.activeElement;
 
 				// Disable tabbing:
-				// See http://stackoverflow.com/questions/1599660/which-html-elements-can-receive-focus
+				// See https://stackoverflow.com/questions/1599660/which-html-elements-can-receive-focus
 				this._$previouslyTabbable = $("a, input, select, textarea, iframe, button, iframe, [contentEditable=true]")
 					.not('[tabindex]')
 					.not(this.$instance.find('button'));
