@@ -58,7 +58,7 @@ class MailChimp
         if (function_exists('curl_init') && function_exists('curl_setopt')){
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+            curl_setopt($ch, CURLOPT_HTTPSHEADER, array('Content-Type: application/json'));
             curl_setopt($ch, CURLOPT_USERAGENT, 'PHP-MCAPI/2.0');       
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_TIMEOUT, 10);
@@ -70,7 +70,7 @@ class MailChimp
         } else {
             $json_data = json_encode($args);
             $result    = file_get_contents($url, null, stream_context_create(array(
-                'http' => array(
+                'https' => array(
                     'protocol_version' => 1.1,
                     'user_agent'       => 'PHP-MCAPI/2.0',
                     'method'           => 'POST',
